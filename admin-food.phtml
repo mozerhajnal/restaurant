@@ -54,7 +54,6 @@
             <div class="row">
                 <div class="col-md-6 mb-5 pb-3">
                     <h3><?= isset($query['id'])?'Módosítás': 'Új étel/ital'?></h3>
-                    <? var_dump($query['id']) ?>
                     <form  <?= isset($query['id'])?'action="/dishes/edit?id='.$query['id'].'"':'action="/dishes"'?> method="POST">
                         <div class="form-group row">
                             <label for="inputName" class="col-sm-2 col-form-label">Név</label>
